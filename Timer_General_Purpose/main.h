@@ -24,6 +24,7 @@
 #define TIM_BASE_START			1
 #define TIM_GP_INITS			1
 #define TIM_GP_START			1
+#define TIM_GP_OC_START			1
 #define UART_INITS				1
 #define UART_START				1
 
