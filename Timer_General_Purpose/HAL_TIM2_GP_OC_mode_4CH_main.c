@@ -224,7 +224,9 @@ void TIM2_Inits(void)
 
 	timerOC_Init.OCMode = TIM_OCMODE_TOGGLE;
 	timerOC_Init.OCPolarity = TIM_OCPOLARITY_HIGH;
-	timerOC_Init.Pulse = pulse1_value;						//for channel 1
+	//value to be loaded into the CCR1 register.
+	//25000 in this case to generate the 500Hz freq. pulse
+	timerOC_Init.Pulse = pulse1_value;
 	if( HAL_TIM_OC_ConfigChannel(&htim2, &timerOC_Init, TIM_CHANNEL_1) != HAL_OK )
 	{
 		Error_Handler();
