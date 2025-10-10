@@ -1,7 +1,7 @@
 /*
  * main.c
  *
- * Created on: 	September 22, 2025
+ * Created on: 	October 10, 2025
  * Author: 		Dhruv Satasiya
  * Descreption: This project is to interface the 16x2 LCD module using STM32F407 Discovery Board.
  * 				It also prints the 0 to 50 numbers and gives a message "Interrupt"
